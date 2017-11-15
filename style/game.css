@@ -1,0 +1,75 @@
+body {
+  background-image: url("../assets/images/back-level-1.png");
+  background-size: cover;
+}
+
+.top {
+display: inline-block;
+width: 100%;
+text-align: center;
+}
+
+.logo {
+float: left;
+padding: 10px;
+}
+
+.score {
+text-align: center;
+padding: 10px;
+font-size: 40px;
+color: white;
+
+
+}
+
+.btn-quitter {
+  float: right;
+
+}
+
+.phrase{
+  text-align: center;
+
+  font-size: 50px;
+  color: white;
+}
+
+.champsemoji{
+  padding: 50px;
+  text-align: center;
+
+}
+
+.saisie{
+  display: inline-block;
+  width: 100px;
+
+  background-color: rgb(162,176,86);
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  height: 9em; /* hauteur du parent */
+  line-height: 9em; /* hauteur de ligne (identique) */
+  white-space: nowrap; /* interdiction de passer à la ligne */
+}
+
+.emojiimg{
+  cursor: pointer;
+  text-align: center;
+  height: 6em; /* hauteur du parent */
+  line-height: 6em; /* hauteur de ligne (identique) */
+  white-space: nowrap; /* interdiction de passer à la ligne */
+}
+
+.backemoji{
+
+background-color: rgba(255, 255, 255, 0.5);
+width: 100%;
+border-radius: 10px;
+}
+
+.titregrille{
+  text-align: center;
+  padding: 10px;
+}
