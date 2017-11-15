@@ -3,8 +3,272 @@
   <head>
     <meta charset="utf-8">
     <title>emoji</title>
+    <link rel="stylesheet" href="../style/game.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
   <body>
-    
+    <div class="top">
+      <div class="logo">
+        <img src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/Logo.png" width="50px">
+      </div>
+      <div class="btn-quitter">
+        <button type="button" class="btn btn-light" id="bouton" >Quitter</button>
+      </div>
+    </div>
+  <div class="score"> <div id="scorejs"></div> pts</div>
+  <div class="phrase" id="phrasejs">
+  </div>
+
+<!-- Carte de saisie des emojis -->
+
+<div class="champsemoji">
+  <div class="saisie" id="backcolor1">
+    <img src=""  width="50px" id="emojicase1">
+  </div>
+  <div class="saisie" id="backcolor2">
+    <img src="" width="50px" id="emojicase2">
+  </div>
+  <div class="saisie" id="backcolor3">
+    <img src="" width="50px" id="emojicase3">
+  </div>
+  <div class="saisie" id="backcolor4">
+    <img src="" width="50px" id="emojicase4">
+  </div>
+  <div class="saisie" id="backcolor5">
+    <img src="" width="50px" id="emojicase5">
+  </div>
+</div>
+
+<!-- Grille des emojis -->
+
+<div class="container">
+  <div class="backemoji">
+    <div class="titregrille">Choisissez des emojis</div>
+
+<!-- Ligne 1 -->
+
+    <div class="row">
+      <div class="emojiimg col-2">
+        <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/7.png" width="50px">
+      </div>
+  <div class="emojiimg col-2">
+    <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/100.png" width="50px" >
+  </div>
+  <div class="emojiimg col-2">
+    <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/112.png" width="50px">
+  </div>
+  <div class="emojiimg col-2">
+    <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/1063.png" width="50px">
+  </div>
+  <div class="emojiimg col-2">
+    <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/189.png" width="50px" >
+  </div>
+  <div class="emojiimg col-2">
+    <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/1061.png" width="50px">
+  </div>
+</div>
+
+<!-- Ligne 2 -->
+
+<div class="row">
+  <div class="emojiimg col-2" >
+    <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/117.png" width="50px">
+  </div>
+  <div class="emojiimg col-2">
+    <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/122.png" width="50px" >
+  </div>
+  <div class="emojiimg col-2">
+    <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/1036.png" width="50px">
+  </div>
+  <div class="emojiimg col-2">
+    <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/1056.png" width="50px">
+  </div>
+  <div class="emojiimg col-2">
+    <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/1068.png" width="50px" >
+  </div>
+  <div class="emojiimg col-2">
+    <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/1069.png" width="50px">
+  </div>
+</div>
+
+<!-- Ligne 3 -->
+
+<div class="row">
+  <div class="emojiimg col-2" >
+    <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/emojilicorne.png" width="50px">
+  </div>
+  <div class="emojiimg col-2">
+    <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/emojilicorne.png" width="50px" >
+  </div>
+  <div class="emojiimg col-2">
+    <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/emojilicorne.png" width="50px">
+  </div>
+  <div class="emojiimg col-2">
+    <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/emojilicorne.png" width="50px">
+  </div>
+  <div class="emojiimg col-2">
+    <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/emojilicorne.png" width="50px" >
+  </div>
+  <div class="emojiimg col-2">
+    <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/emojilicorne.png" width="50px">
+  </div>
+</div>
+
+<!-- Ligne 4 -->
+
+<div class="row">
+  <div class="emojiimg col-2" >
+    <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/emojilicorne.png" width="50px">
+  </div>
+  <div class="emojiimg col-2">
+    <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/emojilicorne.png" width="50px" >
+  </div>
+  <div class="emojiimg col-2">
+    <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/emojilicorne.png" width="50px">
+  </div>
+  <div class="emojiimg col-2">
+    <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/emojilicorne.png" width="50px">
+  </div>
+  <div class="emojiimg col-2">
+    <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/emojilicorne.png" width="50px" >
+  </div>
+  <div class="emojiimg col-2">
+    <img onclick="fttest(this);" src="/Users/antoinerouillon/Documents/GitHub/emoji/assets/images/emojilicorne.png" width="50px">
+  </div>
+</div>
+</div>
+</div>
+
+  <script type="text/javascript">
+
+// Variables texte
+
+    var score = document.getElementById("scorejs");
+    score.innerHTML="600";
+
+    var phrase = document.getElementById("phrasejs");
+    phrase.innerHTML="Ici des pharses en emoji";
+
+//Fonction pour dire de passer a la case suivante
+
+    function fttest(truc) {
+      if (document.getElementById('emojicase1').getAttribute('src') == '') {
+        document.getElementById('emojicase1').setAttribute('src', truc.getAttribute('src'));
+      }
+      else if (document.getElementById('emojicase2').getAttribute('src') == '') {
+        document.getElementById('emojicase2').setAttribute('src', truc.getAttribute('src'));
+      }
+
+      else if (document.getElementById('emojicase3').getAttribute('src') == '') {
+        document.getElementById('emojicase3').setAttribute('src', truc.getAttribute('src'));
+      }
+
+      else if (document.getElementById('emojicase4').getAttribute('src') == '') {
+        document.getElementById('emojicase4').setAttribute('src', truc.getAttribute('src'));
+      }
+      else if (document.getElementById('emojicase5').getAttribute('src') == '') {
+        document.getElementById('emojicase5').setAttribute('src', truc.getAttribute('src'));
+      }
+
+//Fonction de style CSS Shadow + Translate de la box
+
+      if (document.getElementById('emojicase1').getAttribute('src') != '') {
+        var elmt = document.getElementById("backcolor1");
+        elmt.style.boxShadow = "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)";
+        elmt.style.transform = "translateY(-10px)";
+      }
+
+      if (document.getElementById('emojicase2').getAttribute('src') != '') {
+        var elmt2 = document.getElementById("backcolor2");
+        elmt2.style.boxShadow = "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)";
+        elmt2.style.transform = "translateY(-10px)";
+      }
+
+      if (document.getElementById('emojicase3').getAttribute('src') != '') {
+        var elmt2 = document.getElementById("backcolor3");
+        elmt2.style.boxShadow = "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)";
+        elmt2.style.transform = "translateY(-10px)";
+      }
+
+      if (document.getElementById('emojicase4').getAttribute('src') != '') {
+        var elmt2 = document.getElementById("backcolor4");
+        elmt2.style.boxShadow = "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)";
+        elmt2.style.transform = "translateY(-10px)";
+      }
+
+      if (document.getElementById('emojicase5').getAttribute('src') != '') {
+        var elmt2 = document.getElementById("backcolor5");
+        elmt2.style.boxShadow = "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)";
+        elmt2.style.transform = "translateY(-10px)";
+      }
+    };
+
+//Fonction pour supprimer l'emoji de la case
+
+    var deplaceremoji1 = document.getElementById('emojicase1');
+    deplaceremoji1.addEventListener("click", suppemoji1, false);
+
+    function suppemoji1() {
+      document.getElementById('emojicase1').setAttribute('src', "");
+
+      if (document.getElementById('emojicase1').getAttribute('src') == '') {
+        var elmt1 = document.getElementById("backcolor1");
+        elmt1.style.boxShadow = "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)";
+        elmt1.style.transform = "translateY(0px)";
+      }
+    };
+
+    var deplaceremoji2 = document.getElementById('emojicase2');
+    deplaceremoji2.addEventListener("click", suppemoji2, false);
+
+    function suppemoji2() {
+      document.getElementById('emojicase2').setAttribute('src', "");
+
+      if (document.getElementById('emojicase2').getAttribute('src') == '') {
+        var elmt2 = document.getElementById("backcolor2");
+        elmt2.style.boxShadow = "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)";
+        elmt2.style.transform = "translateY(0px)";
+      }
+    };
+
+    var deplaceremoji3 = document.getElementById('emojicase3');
+    deplaceremoji3.addEventListener("click", suppemoji3, false);
+
+    function suppemoji3() {
+      document.getElementById('emojicase3').setAttribute('src', "");
+
+      if (document.getElementById('emojicase3').getAttribute('src') == '') {
+        var elmt3 = document.getElementById("backcolor3");
+        elmt3.style.boxShadow = "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)";
+        elmt3.style.transform = "translateY(0px)";
+      }
+    };
+
+    var deplaceremoji4 = document.getElementById('emojicase4');
+    deplaceremoji4.addEventListener("click", suppemoji4, false);
+
+    function suppemoji4() {
+      document.getElementById('emojicase4').setAttribute('src', "");
+
+      if (document.getElementById('emojicase4').getAttribute('src') == '') {
+        var elmt4 = document.getElementById("backcolor4");
+        elmt4.style.boxShadow = "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)";
+        elmt4.style.transform = "translateY(0px)";
+      }
+    };
+
+    var deplaceremoji5 = document.getElementById('emojicase5');
+    deplaceremoji5.addEventListener("click", suppemoji5, false);
+
+    function suppemoji5() {
+      document.getElementById('emojicase5').setAttribute('src', "");
+
+      if (document.getElementById('emojicase5').getAttribute('src') == '') {
+        var elmt5 = document.getElementById("backcolor5");
+        elmt5.style.boxShadow = "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)";
+        elmt5.style.transform = "translateY(0px)";
+      }
+    };
+    </script>
   </body>
 </html>
