@@ -1,17 +1,48 @@
-.score{
+body {
+	background-image: url("../assets/images/export-back.png");
+	background-size: cover;
+	color: white;
+}
+
+p {
+    text-transform: uppercase;
+}
+
+.bravo{							/* nom du joueur */
 	text-align: center;
 	font-size: 50px;
-	margin-top: 400px;
+	margin: 0;
+	font-family: 'Baloo Bhai';
+	margin-top: 100px;
 }
 
-.point{
-	text-align: center;
-	font-size: 100px;
-	font-weight: bold;
-}
-
-.rejouer{
-	font-size: 30px;
+.divbouton{						
 	text-align: center;
 	margin-top: 100px;
+}
+
+.btn {
+  background-image: -webkit-linear-gradient(top, #FFFFFF, #FFFFFF);
+  background-image: -moz-linear-gradient(top, #FFFFFF, #FFFFFF);
+  background-image: -ms-linear-gradient(top, #FFFFFF, #FFFFFF);
+  background-image: -o-linear-gradient(top, #FFFFFF, #FFFFFF);
+  background-image: linear-gradient(to bottom, #FFFFFF, #FFFFFF);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 10px;
+  font-family: 'helvetica';
+  color: #000000;
+  font-size: 25px;
+  padding: 22px 22px 22px 22px;
+  text-decoration: none;
+}
+
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+.logo{
+	text-align: center;
+	margin-top: 70px;
 }
