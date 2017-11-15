@@ -1,33 +1,94 @@
-h1 {
-  text-align: center;
+body {
+  background-image: url("../images/export-back.png");
+  background-size: cover;
 }
 
-.button {
-  display: inline-block;
-  padding: 35px 45px;
-  font-size: 34px;
-  cursor: pointer;
+
+a {
+  background-color: white;
+  border-radius: 5px 5px 5px 5px;
+  border: 0,5px solid black;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.bouton {
+  margin-top: 10px;
+  font-family: helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding: 20px;
   text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #4CAF50;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+#tuto{
+  padding-left: 67px;
+  padding-right: 67px;
+}
+
+
+a:link {
+ text-decoration:none;
+ color:black;
+}
+
+a:visited {
+  color: black;
+}
+
+.name {
+text-align: center;
+background-color: inherit;
+background-color:transparent;
+font-family: 'Baloo Bhai', cursive;
+}
+
+.hola {
+margin-left: auto;
+margin-right: auto;
+margin-top: 320px;
+}
+
+input[type="text"]
+{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 50px;
+    margin-left: 20px;
+    width: 60%;
+    border-bottom: 1px solid white;
+    outline: none;
 
 }
 
-.button:hover {background-color: #3e8e41}
+.placeholder
+{
 
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+color: white;
 }
 
-.play {
-  margin-top: 350px;
-  text-align: center;
+::-webkit-input-placeholder { color: rgba(255, 255, 255, 0.5); text-align: center;}
 
+:-moz-placeholder { /* Firefox 18- */ color: rgba(255, 255, 255, 0.5); text-align: center;}
+
+::-moz-placeholder { /* Firefox 19+ */ color: rgba(255, 255, 255, 0.5); text-align: center;}
+
+:-ms-input-placeholder { color: rgba(255, 255, 255, 0.5); text-align: center;}
+
+
+input{
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 10px;
+}
+
+a {
+  font-family: 'helvetica', cursive;
 }
