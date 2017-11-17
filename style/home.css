@@ -1,10 +1,29 @@
 body {
   background-image: url("../assets/images/export-back.png");
   background-size: cover;
+  margin-top: 200px;
 }
 
+.submit{
+  border:none;
 
-a {
+  background-color: white;
+  border-radius: 5px 5px 5px 5px;
+  border: 0,5px solid black;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.submit:hover{
+  cursor: pointer;
+  outline: none
+}
+
+a{
   background-color: white;
   border-radius: 5px 5px 5px 5px;
   border: 0,5px solid black;
@@ -53,10 +72,10 @@ font-family: 'Baloo Bhai', cursive;
 .hola {
 margin-left: auto;
 margin-right: auto;
-margin-top: 320px;
+margin-top: 0px;
 }
 
-input[type="text"]
+.input_nom[type="text"]
 {
     background: transparent;
     border: none;
@@ -66,6 +85,7 @@ input[type="text"]
     width: 60%;
     border-bottom: 1px solid white;
     outline: none;
+    text-align: center;
 
 }
 
@@ -84,11 +104,31 @@ color: white;
 :-ms-input-placeholder { color: rgba(255, 255, 255, 0.5); text-align: center;}
 
 
-input{
+.input_nom{
   font-family: 'Baloo Bhai', cursive;
   font-size: 10px;
 }
 
-a {
+a, .input{
   font-family: 'helvetica', cursive;
+}
+
+#tutorial {
+width: 300%;
+
+}
+
+#video {
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+     }
+
+#logo {
+  width: 100%;
+  text-align: center;
+height: 330px;
 }

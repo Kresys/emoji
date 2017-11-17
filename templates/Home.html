@@ -8,13 +8,42 @@
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
   </head>
   <body>
+<div id="logo">
+<img src="../assets/images/logosmall.png"></img>
 
-      <div class="hola">
-      <div class="name"><input type="text" placeholder="VOTRE NOM"></div>
-      <br>
-      <div class="bouton"><a id="tuto" href="#">VOIR LE TUTO</a></div>
-      <div class="bouton"><a href="game.html">COMMENCER A JOUER</a></div>
+<div>
+
+    <div id="tutorial">
+
+        <video id="video" src="../assets/video/junglee.mp4"></video>
+
     </div>
+
+
+    <form action="../php/insertPseudo.php" method="post" class="hola" id="myform">
+      <div class="name"><input class="input_nom" type="text" name="pseudo" placeholder="VOTRE NOM" required/></div>
+      <div class="bouton"><a id="tuto" onclick="playvideo()" href="#">VOIR LE TUTO</a></div>
+      <div class="bouton"><input class="submit" type="submit" value="COMMENCER A JOUER"></input></div>
+    </form>
+
+
+<script>
+
+document.getElementById('video').onclick = function (){
+    document.getElementById('video').play();
+};
+function playvideo() {
+  document.getElementById('video').style.visibility = 'visible';
+}
+document.getElementById('video').addEventListener('ended', finvideo, false);
+
+function finvideo () {
+
+document.getElementById('video').style.visibility = 'hidden';
+
+}
+
+</script>
 
   </body>
 </html>
