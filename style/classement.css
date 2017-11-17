@@ -1,10 +1,39 @@
 body {
-	background-image: url("../assets/images/FondTop10.png");
-	background-size: cover;
-	background-repeat: no-repeat;
 	color: white;
 	text-transform: uppercase;
 	background-color: black;
+}
+
+/* ipad */
+@media (min-width: 900px) and (max-height: 1200px) {
+    body{
+      background-image: url('../assets/images/export-back.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center; 
+      background-size: cover;
+      height: 100%;
+    }
+}
+
+
+/* lenovo */
+@media screen and (max-width: 900px){
+  body {
+    background-image: url('../assets/images/export-back.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
+  }
+}
+
+/* android */
+@media screen and (min-height: 1200px) {
+  body {
+    background-image: url('../assets/images/export-back.png');
+    background-size: 980px 1419px;
+  }
 }
 
 .divbouton{            

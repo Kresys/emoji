@@ -5,13 +5,14 @@
     <title>emoji</title>
     <link rel="stylesheet" href="../style/game.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
-  <body>
+  <body class="background background-1">
     <div class="top">
 
       <div id="timer"></div>
-      <div class="btn-quitter">&#215</div>
-      <div class="score"> <div id="scorejs">600 </div>&nbsppts</div>
+      <div class="btn-quitter"><a class="lien-quitter" href="home.html">&#215</a></div>
+      <div class="score"> <div id="scorejs">-10 </div>&nbsppts</div>
     </div>
 
 
@@ -20,7 +21,7 @@
 
 <!-- Carte de saisie des emojis -->
 
-<div class="champsemoji">
+<div class="champsemoji" id="champsemoji">
   <div class="saisie" id="backcolor1">
     <img src=""  width="50px" id="emojicase1">
   </div>
@@ -41,98 +42,98 @@
 <!-- Grille des emojis -->
 
 <div class="container">
-  <div class="backemoji">
+  <div class="backemoji" id="backemoji">
     <div class="titregrille">Choisissez des emojis</div>
 
 <!-- Ligne 1 -->
 
-    <div class="row">
-      <div class="emojiimg col-2">
-        <img onclick="fttest(this);" src="../assets/images/7.png" width="50px" id="img0">
-      </div>
+<div class="row" id="row1">
   <div class="emojiimg col-2">
-    <img onclick="fttest(this);" src="../assets/images/112.png" width="50px" id="img1" >
+    <img onclick="fttest(this);" width="50px" id="img0">
   </div>
   <div class="emojiimg col-2">
-    <img onclick="fttest(this);" src="../assets/images/123.png" width="50px" id="img2">
+    <img onclick="fttest(this);" width="50px" id="img1" >
   </div>
   <div class="emojiimg col-2">
-    <img onclick="fttest(this);" src="../assets/images/182.png" width="50px" id="img3">
+    <img onclick="fttest(this);" width="50px" id="img2">
   </div>
   <div class="emojiimg col-2">
-    <img onclick="fttest(this);" src="../assets/images/1021.png" width="50px" id="img4" >
+    <img onclick="fttest(this);" width="50px" id="img3">
   </div>
   <div class="emojiimg col-2">
-    <img onclick="fttest(this);" src="../assets/images/1030.png" width="50px" id="img5">
+    <img onclick="fttest(this);" width="50px" id="img4" >
+  </div>
+  <div class="emojiimg col-2">
+    <img onclick="fttest(this);" width="50px" id="img5">
   </div>
 </div>
 
 <!-- Ligne 2 -->
 
-<div class="row">
+<div class="row" id="row2">
   <div class="emojiimg col-2" >
-    <img onclick="fttest(this);" src="../assets/images/1033.png" width="50px" id="img6">
+    <img onclick="fttest(this);" width="50px" id="img6">
   </div>
   <div class="emojiimg col-2">
-    <img onclick="fttest(this);" src="../assets/images/1053.png" width="50px" id="img7">
+    <img onclick="fttest(this);" width="50px" id="img7">
   </div>
   <div class="emojiimg col-2">
-    <img onclick="fttest(this);" src="../assets/images/1069.png" width="50px" id="img8">
+    <img onclick="fttest(this);" width="50px" id="img8">
   </div>
   <div class="emojiimg col-2">
-    <img onclick="fttest(this);" src="../assets/images/1203.png" width="50px" id="img9">
+    <img onclick="fttest(this);" width="50px" id="img9">
   </div>
   <div class="emojiimg col-2">
-    <img onclick="fttest(this);" src="../assets/images/1245.png" width="50px" id="img10">
+    <img onclick="fttest(this);" width="50px" id="img10">
   </div>
   <div class="emojiimg col-2">
-    <img onclick="fttest(this);" src="../assets/images/1270.png" width="50px" id="img11">
+    <img onclick="fttest(this);" width="50px" id="img11">
   </div>
 </div>
 
 <!-- Ligne 3 -->
 
-<div class="row">
+<div class="row" id="row3">
   <div class="emojiimg col-2" >
-    <img onclick="fttest(this);" src="../assets/images/1294.png" width="50px" id="img12">
+    <img onclick="fttest(this);" width="50px" id="img12">
   </div>
   <div class="emojiimg col-2">
-    <img onclick="fttest(this);" src="../assets/images/1314.png" width="50px" id="img13" >
+    <img onclick="fttest(this);" width="50px" id="img13" >
   </div>
   <div class="emojiimg col-2">
-    <img onclick="fttest(this);" src="../assets/images/1330.png" width="50px" id="img14">
+    <img onclick="fttest(this);" width="50px" id="img14">
   </div>
   <div class="emojiimg col-2">
-    <img onclick="fttest(this);" src="../assets/images/1334.png" width="50px" id="img15">
+    <img onclick="fttest(this);" width="50px" id="img15">
   </div>
   <div class="emojiimg col-2">
-    <img onclick="fttest(this);" src="../assets/images/1418.png" width="50px" id="img16" >
+    <img onclick="fttest(this);" width="50px" id="img16" >
   </div>
   <div class="emojiimg col-2">
-    <img onclick="fttest(this);" src="../assets/images/1600.png" width="50px" id="img17">
+    <img onclick="fttest(this);"  width="50px" id="img17">
   </div>
 </div>
 
 <!-- Ligne 4 -->
 
-<div class="row">
+<div class="row" id="row4">
   <div class="emojiimg col-2" >
-    <img onclick="fttest(this);" src="../assets/images/1636.png" width="50px" id="img18">
+    <img onclick="fttest(this);" width="50px" id="img18">
   </div>
   <div class="emojiimg col-2">
-    <img onclick="fttest(this);" src="../assets/images/1640.png" width="50px" id="img19" >
+    <img onclick="fttest(this);" width="50px" id="img19" >
   </div>
   <div class="emojiimg col-2">
-    <img onclick="fttest(this);" src="../assets/images/1718.png" width="50px" id="img20">
+    <img onclick="fttest(this);" width="50px" id="img20">
   </div>
   <div class="emojiimg col-2">
-    <img onclick="fttest(this);" src="../assets/images/1732.png" width="50px" id="img21">
+    <img onclick="fttest(this);" width="50px" id="img21">
   </div>
   <div class="emojiimg col-2">
-    <img onclick="fttest(this);" src="../assets/images/1823.png" width="50px" id="img22" >
+    <img onclick="fttest(this);" width="50px" id="img22" >
   </div>
   <div class="emojiimg col-2">
-    <img onclick="fttest(this);" src="../assets/images/1498.png" width="50px" id="img23">
+    <img onclick="fttest(this);" width="50px" id="img23">
   </div>
 </div>
 </div>
@@ -140,76 +141,367 @@
 
   <script type="text/javascript">
 
-// Variables texte
+// Variable générale des données du jeu
 
-    var score = document.getElementById("scorejs");
-    score.innerHTML="600";
+var game = [];
 
+// Récupération id
+
+  var url = new URL(window.location.href);
+  var playerId = url.searchParams.get("id");
+
+// Récupération des données php
+  $.ajax({ url: '../php/game.php',
+          data: {action: 'getDatas'},
+          type: 'post',
+          success: function(output) {
+                        var jsonGame = $.parseJSON('[' + output + ']');
+                        console.log(jsonGame);
+                        game = jsonGame[0];
+                        launchGame(game);
+                    }
+  });
+
+// Variables principales
+
+var solution = [];
+function setSolution(s){
+  this.solution = s;
+}
+function getSolution(){
+  return this.solution;
+}
+
+var niveau1 = [];
+function setNiveau1(nv){
+  this.niveau1 = nv;
+}
+function getNiveau1(){
+  return this.niveau1;
+}
+
+var niveau2 = [];
+function setNiveau2(nv){
+  this.niveau2 = nv;
+}
+function getNiveau2(){
+  return this.niveau2;
+}
+
+var niveau3 = [];
+function setNiveau3(nv){
+  this.niveau3 = nv;
+}
+function getNiveau3(){
+  return this.niveau3;
+}
+
+var niveau4 = [];
+function setNiveau4(nv){
+  this.niveau4 = nv;
+}
+function getNiveau4(){
+  return this.niveau4;
+}
+
+var current_niveau = [];
+
+// Fonctions principales
+
+function launchGame(game){
+  var liste_niveaux = game[0];
+  var liste_annonces = game[1];
+
+  this.setNiveau1(liste_niveaux[0]);
+  this.setNiveau2(liste_niveaux[1]);
+  this.setNiveau3(liste_niveaux[2]);
+  this.setNiveau4(liste_niveaux[3]);
+
+  console.log(liste_niveaux[3]);
+
+  this.current_niveau = [0,0];
+  runNiveau(this.current_niveau);
+}
+
+function runNiveau(next_niveau){
+
+  console.log(next_niveau);
+
+  var niveau;
+  var current_niveau;
+  switch(next_niveau[0]){
+    case 0:
+      niveau = this.getNiveau1();
+      this.setScore(10);
+      break;
+    case 1:
+      niveau = this.getNiveau2();
+      this.setScore(25);
+      this.editNiveau(2);
+      break;
+    case 2:
+      niveau = this.getNiveau3();
+      this.setScore(100);
+      this.editNiveau(3);
+      break;
+    case 3:
+      niveau = this.getNiveau4();
+      this.setScore(200);
+      this.editNiveau(4);
+      break;
+  }
+
+  switch(next_niveau[1]){
+    case 0:
+      current_niveau = niveau[0];
+      break;
+    case 1:
+      current_niveau = niveau[1];
+      break;
+    case 2:
+      current_niveau = niveau[2];
+      break;
+    case 3:
+      current_niveau = niveau[3];
+      break;
+    case 4:
+      current_niveau = niveau[4];
+      break;
+  }
+
+  try{
+    this.setSolution(current_niveau["solution"]);
+    this.initPhrase(current_niveau["phrase"]);
+    this.initSuggestions(current_niveau["suggestions"]);
+    this.initSaisie(current_niveau["solution"].length);
+  }
+  catch(e){}
+}
+
+// Variable score
+
+function setScore(nbPoints){
+    var score = document.getElementById("scorejs").innerHTML;
+    console.log(score);
+    var current_score = parseInt(score);
+    var new_score = current_score + nbPoints;
+    console.log(new_score);
+    document.getElementById("scorejs").innerHTML=""+new_score;
+}
+
+// Variables phrase
+
+function initPhrase(current_phrase){
     var phrase = document.getElementById("phrasejs");
-    phrase.innerHTML="Ici des phrases en emoji";
+    phrase.innerHTML=""+current_phrase;
+}
 
 // Variables images emoji
 
-    var img = [7, 1636, 1640, 1718, 1732, 1823, 1498, 1294, 1330, 1314, 1334, 1418, 1600, 1033, 1053, 1069, 1203, 1245, 1270, 112, 123, 182, 1021, 1030];
-    var num = 0;
-    while (num < 24) {
-      document.getElementById('img' + num).setAttribute('src', "../assets/images/" + img[num] + ".png");
-      num = num + 1;
+function initSuggestions(current_suggestions){
+
+  var num = 0;
+  while (num < current_suggestions.length) {
+    document.getElementById('img' + num).setAttribute('src', "../assets/images/" + current_suggestions[num] + ".png");
+    num += 1;
+  }
+  // Cacher les row Niveau 1
+
+    if (num == 6) {
+      var ligne = document.getElementById('row4');
+      ligne.style.display = 'none';
     }
+    if (num == 6) {
+      var ligne = document.getElementById('row3');
+      ligne.style.display = 'none';
+    }
+    if (num == 6) {
+      var ligne = document.getElementById('row2');
+      ligne.style.display = 'none';
+    }
+
+// afficher les row Niveau 2
+
+    if (num == 12) {
+      var ligne = document.getElementById('row2');
+      ligne.removeAttribute('style');
+    }
+
+// afficher les row Niveau 3
+
+    if (num == 18) {
+      var ligne = document.getElementById('row3');
+      ligne.removeAttribute('style');
+    }
+
+// afficher les row Niveau 3
+
+    if (num == 24) {
+      var ligne = document.getElementById('row4');
+      ligne.removeAttribute('style');
+    }
+}
+
+// Création champs de saisie
+
+function initSaisie(tailleSaisie){
+  var num = 1;
+  document.getElementById('backcolor1').classList.add('saisie-hidden');
+  document.getElementById('backcolor2').classList.add('saisie-hidden');
+  document.getElementById('backcolor3').classList.add('saisie-hidden');
+  document.getElementById('backcolor4').classList.add('saisie-hidden');
+  document.getElementById('backcolor5').classList.add('saisie-hidden');
+
+  while (num < tailleSaisie+1){
+    document.getElementById('backcolor'+num).classList.remove('saisie-hidden');
+    num += 1;
+  }
+}
 
 //Fonction pour dire de passer a la case suivante
 
-    function fttest(truc) {
-      if (document.getElementById('emojicase1').getAttribute('src') == '') {
-        document.getElementById('emojicase1').setAttribute('src', truc.getAttribute('src'));
-      }
-      else if (document.getElementById('emojicase2').getAttribute('src') == '') {
-        document.getElementById('emojicase2').setAttribute('src', truc.getAttribute('src'));
-      }
+  function fttest(truc) {
+    if (document.getElementById('emojicase1').getAttribute('src') == '') {
+      document.getElementById('emojicase1').setAttribute('src', truc.getAttribute('src'));
+    }
+    else if (document.getElementById('emojicase2').getAttribute('src') == '') {
+      document.getElementById('emojicase2').setAttribute('src', truc.getAttribute('src'));
+    }
 
-      else if (document.getElementById('emojicase3').getAttribute('src') == '') {
-        document.getElementById('emojicase3').setAttribute('src', truc.getAttribute('src'));
-      }
+    else if (document.getElementById('emojicase3').getAttribute('src') == '') {
+      document.getElementById('emojicase3').setAttribute('src', truc.getAttribute('src'));
+    }
 
-      else if (document.getElementById('emojicase4').getAttribute('src') == '') {
-        document.getElementById('emojicase4').setAttribute('src', truc.getAttribute('src'));
-      }
-      else if (document.getElementById('emojicase5').getAttribute('src') == '') {
-        document.getElementById('emojicase5').setAttribute('src', truc.getAttribute('src'));
-      }
+    else if (document.getElementById('emojicase4').getAttribute('src') == '') {
+      document.getElementById('emojicase4').setAttribute('src', truc.getAttribute('src'));
+    }
+    else if (document.getElementById('emojicase5').getAttribute('src') == '') {
+      document.getElementById('emojicase5').setAttribute('src', truc.getAttribute('src'));
+    }
 
 //Fonction de style CSS Shadow + Translate de la box
 
-      if (document.getElementById('emojicase1').getAttribute('src') != '') {
-        var elmt = document.getElementById("backcolor1");
-        elmt.style.boxShadow = "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)";
-        elmt.style.transform = "translateY(-10px)";
-      }
+    if (document.getElementById('emojicase1').getAttribute('src') != '') {
+      var elmt = document.getElementById("backcolor1");
+      elmt.style.boxShadow = "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)";
+      elmt.style.transform = "translateY(-10px)";
+    }
 
-      if (document.getElementById('emojicase2').getAttribute('src') != '') {
-        var elmt2 = document.getElementById("backcolor2");
-        elmt2.style.boxShadow = "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)";
-        elmt2.style.transform = "translateY(-10px)";
-      }
+    if (document.getElementById('emojicase2').getAttribute('src') != '') {
+      var elmt2 = document.getElementById("backcolor2");
+      elmt2.style.boxShadow = "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)";
+      elmt2.style.transform = "translateY(-10px)";
+    }
 
-      if (document.getElementById('emojicase3').getAttribute('src') != '') {
-        var elmt2 = document.getElementById("backcolor3");
-        elmt2.style.boxShadow = "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)";
-        elmt2.style.transform = "translateY(-10px)";
-      }
+    if (document.getElementById('emojicase3').getAttribute('src') != '') {
+      var elmt2 = document.getElementById("backcolor3");
+      elmt2.style.boxShadow = "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)";
+      elmt2.style.transform = "translateY(-10px)";
+    }
 
-      if (document.getElementById('emojicase4').getAttribute('src') != '') {
-        var elmt2 = document.getElementById("backcolor4");
-        elmt2.style.boxShadow = "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)";
-        elmt2.style.transform = "translateY(-10px)";
-      }
+    if (document.getElementById('emojicase4').getAttribute('src') != '') {
+      var elmt2 = document.getElementById("backcolor4");
+      elmt2.style.boxShadow = "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)";
+      elmt2.style.transform = "translateY(-10px)";
+    }
 
-      if (document.getElementById('emojicase5').getAttribute('src') != '') {
-        var elmt2 = document.getElementById("backcolor5");
-        elmt2.style.boxShadow = "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)";
-        elmt2.style.transform = "translateY(-10px)";
+    if (document.getElementById('emojicase5').getAttribute('src') != '') {
+      var elmt2 = document.getElementById("backcolor5");
+      elmt2.style.boxShadow = "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)";
+      elmt2.style.transform = "translateY(-10px)";
+    }
+
+    var solution = this.getSolution();
+    var reponse = [];
+    var n=1;
+    var src = "";
+    while(n!=5){
+      var src = document.getElementById('emojicase'+n).getAttribute('src');
+      if( src != ''){
+        src = src.slice(17,99); // Enleve le chemin
+        src = src.substring(0, src.length - 4);
+        reponse.push(src);
+        if(n==solution.length){
+          var resultat = verifReponse(reponse, solution);
+          if(resultat==true){
+            document.getElementById('backemoji').classList.add('backemoji-good');
+            setTimeout(
+              function(){
+                  valideNiveau();
+              },
+              350
+            );
+            break;
+          }
+          else if(resultat==false){
+            this.error();
+          }
+        }
+        n+=1;
       }
-    };
+      else{
+        n+=1;
+      }
+    }
+
+    function verifReponse(reponseVerif, solutionVerif){
+      var res=0;
+      var exclusionListe = [];
+      for(var r in reponseVerif){
+        for(var s in solutionVerif){
+          if(solutionVerif[s]==reponseVerif[r] && !exclusionListe.includes(reponseVerif[r])){
+            res+=1;
+            exclusionListe.push(solutionVerif[s]);
+          }
+        } 
+      }
+      if(res==solutionVerif.length){
+        return true;
+      }
+      return false;
+    }
+
+    function valideNiveau(){
+      this.current_niveau[1]+=1;
+      if(this.current_niveau[0]==3 && this.current_niveau[1]==this.niveau4.length){
+        alert("HEIN ??? MAIS ... ON AVAIT PAS PREVU QUE TU TERMINE !!!");
+      }
+      else if(this.current_niveau[0]==3){
+        this.runNiveau(this.current_niveau);
+        // CODE FONCTIONNE PAS BIEN
+      }
+      else if(this.current_niveau[1]<5 && this.current_niveau[0]!=3){
+        this.runNiveau(this.current_niveau);
+      }
+      else{
+        this.current_niveau[0]+=1;
+        this.current_niveau[1]=0;
+        this.runNiveau(this.current_niveau);
+      }
+      document.getElementById('backemoji').classList.remove('backemoji-good')
+      this.clearSaisie();
+    }
+  };
+
+  function error(){
+    document.getElementById('backemoji').classList.add('backemoji-error');
+    setTimeout(
+      function(){
+        this.clearSaisie();
+        document.getElementById('backemoji').classList.remove('backemoji-error')
+      },350);
+    this.setScore(-3);
+  }
+
+// Vide la saisie
+
+function clearSaisie(){
+  this.suppemoji1();
+  this.suppemoji2();
+  this.suppemoji3();
+  this.suppemoji4();
+  this.suppemoji5();
+}
 
 //Fonction pour supprimer l'emoji de la case
 
@@ -278,8 +570,11 @@
       }
     };
 
-var secondes = 01;
-var minutes = 2;
+
+// TIMER 
+
+var secondes = 10;
+var minutes = 0;
 document.getElementById('timer').innerHTML = minutes + ":" + secondes;
 startTimer();
 
@@ -296,11 +591,13 @@ function startTimer() {
     couleur.style.backgroundColor = "#fd7e14";
     couleur.style.color ="white";
   }
-  //if(m<0){alert('timer completed')}
+  if (s == 0 && m == 0){
+    this.endGame();
+  }
 
   document.getElementById('timer').innerHTML =
     m + ":" + s;
-  setTimeout(startTimer, 1000);
+  var timer = setTimeout(startTimer, 1000);
 }
 
 function checkSecond(sec) {
@@ -311,6 +608,22 @@ function checkSecond(sec) {
     sec = "59"
   };
   return sec;
+}
+
+function editNiveau(nv){
+  document.body.classList.remove("background-"+nv-1);
+  document.body.classList.add("background-"+nv);
+}
+
+function endGame(){
+  $.ajax({ url: '../php/score.php',
+          data: {action: 'setScore', score: ''+document.getElementById("scorejs").innerHTML, id: ''+this.playerId},
+          type: 'post',
+          success: function(output) {
+                        console.log(output);
+                    }
+  });
+  document.location.href = "score.html?id="+this.playerId;
 }
 
 

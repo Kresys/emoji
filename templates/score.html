@@ -9,17 +9,33 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../style/score.css">
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 
 <body>
-	<video src="../assets/video/junglee.mp4" autoplay loop id="mavideo"></video>
 	<div class="logo"><img src="../assets/images/LogoSmall.png"></div>
 	<p class="bravo">BRAVO $PSEUDO<br>TU AS OBTENU<br>600 points <br> <FONT size="6px">TU ES 13ème</p>
 	<div class="divbouton"><a href="../templates/classement.html"> <input class="btn" type="button" value="VOIR LE CLASSEMENT"/></a></div>
 	<div class="divbouton2"><a href="../templates/home.html"> <input class="btn2" type="button" value="RECOMMENCER A JOUER"/></a></div>	<!-- Mettre le lien de la page 2 -->
 
 
+	<script>
+		var url = new URL(window.location.href);
+  		var playerId = url.searchParams.get("id");
+		$.ajax({ url: '../php/score.php',
+          data: {action: 'getScore', id: ''+this.playerId},
+          type: 'post',
+          success: function(output) {
+			  			var jsonvalue = $.parseJSON('[' + output + ']');
+						setDatas(jsonvalue[0],jsonvalue[1],jsonvalue[2]);
+                    }
+  		});
+
+		function setDatas(rank, score, pseudo){
+
+		}  
+	</script>
 </body>
 
 </html>

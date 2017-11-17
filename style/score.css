@@ -1,7 +1,37 @@
 body {
-	background-color: black;
-	background-size: cover;
 	color: white;
+}
+
+/* ipad */
+@media (min-width: 900px) and (max-height: 1200px) {
+    body{
+      background-image: url('../assets/images/export-back.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center; 
+      background-size: cover;
+      height: 100%;
+    }
+}
+
+
+/* lenovo */
+@media screen and (max-width: 900px){
+  body {
+    background-image: url('../assets/images/export-back.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
+  }
+}
+
+/* android */
+@media screen and (min-height: 1200px) {
+  body {
+    background-image: url('../assets/images/export-back.png');
+    background-size: 980px 1419px;
+  }
 }
 
 p {
@@ -58,7 +88,6 @@ p {
   text-decoration: none;
 }
 
-}
 .btn:hover {
   text-decoration: none;
 }
@@ -66,15 +95,4 @@ p {
 .logo{
 	text-align: center;
 	margin-top: 22px;
-}
-
-#mavideo {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -100;
 }

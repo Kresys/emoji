@@ -1,6 +1,36 @@
-body {
-  background-image: url("../assets/images/export-back.png");
-  background-size: cover;
+/* ipad */
+@media (min-width: 900px) and (max-height: 1200px) {
+    body{
+      background-image: url('../assets/images/export-back.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center; 
+      background-size: cover;
+      height: 100%;
+    }
+}
+
+
+/* lenovo */
+@media screen and (max-width: 900px){
+  body {
+    background-image: url('../assets/images/export-back.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
+  }
+}
+
+/* android */
+@media screen and (min-height: 1200px) {
+  body {
+    background-image: url('../assets/images/export-back.png');
+    background-size: 980px 1419px;
+  }
+}
+
+#logo{
   margin-top: 200px;
 }
 
@@ -125,10 +155,10 @@ width: 300%;
   position: absolute;
   top: 0;
   left: 0;
-     }
+}
 
 #logo {
   width: 100%;
   text-align: center;
-height: 330px;
+  height: 330px;
 }

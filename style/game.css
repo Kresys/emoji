@@ -1,6 +1,59 @@
-body {
+.background-1{
   background-image: url("../assets/images/back-level-1.png");
-  background-size: cover;
+}
+.background-2{
+  background-image: url("../assets/images/back-level-2.png");
+}
+.background-3{
+  background-image: url("../assets/images/back-level-3.png");
+}
+.background-4{
+  background-image: url("../assets/images/back-level-4.png");
+}
+
+/* ipad */
+@media (min-width: 900px) and (max-height: 1200px) {
+  .background{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
+  }
+}
+
+/* lenovo */
+@media screen and (max-width: 900px){
+  .background{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
+  }
+}
+
+/* android */
+@media screen and (min-height: 1200px) {
+  .background{
+    background-size: 980px 1419px;
+  }
+}
+
+.saisie{
+  display: inline-block;
+  width: 100px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  height: 9em; /* hauteur du parent */
+  line-height: 9em; /* hauteur de ligne (identique) */
+  white-space: nowrap; /* interdiction de passer à la ligne */
+}
+
+.saisie-hidden{
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
+  margin: 0;
 }
 
 .top {
@@ -10,7 +63,6 @@ text-align: center;
 padding-top: 40px;
 margin-bottom: 50px;
 }
-
 
 .score {
 padding: 10px;
@@ -53,6 +105,17 @@ justify-content: center;
   font-size: 40px;
 }
 
+.lien-quitter{
+  text-decoration: none;
+  outline: none;
+  color: #2B2B2B !important;
+}
+
+.lien-quitter:active{
+  text-decoration: none;
+  outline: none;
+}
+
 .phrase{
   text-align: center;
 
@@ -65,19 +128,6 @@ justify-content: center;
   text-align: center;
 }
 
-.saisie{
-  display: inline-block;
-  width: 100px;
-
-  background-color: rgb(162,176,86);
-  margin: 10px;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  height: 9em; /* hauteur du parent */
-  line-height: 9em; /* hauteur de ligne (identique) */
-  white-space: nowrap; /* interdiction de passer à la ligne */
-}
-
 .emojiimg{
   cursor: pointer;
   text-align: center;
@@ -87,9 +137,18 @@ justify-content: center;
 }
 
 .backemoji{
-background-color: rgba(255, 255, 255, 0.5);
+background-color: rgba(255, 255, 255, 0.8);
 width: 100%;
 border-radius: 10px;
+margin-top: 10%;
+}
+
+.backemoji-error{
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.backemoji-good{
+  background-color: rgba(0, 255, 0, 0.5);
 }
 
 .titregrille{
