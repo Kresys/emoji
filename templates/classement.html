@@ -21,62 +21,62 @@
 
 			   <tr>
 			       <td>1</td>
-			       <td>Joueur 1</td>
-			       <td>620</td>
+			       <td id='j1'></td>
+			       <td id='s1'></td>
 			   </tr>
 
 			   <tr>
 			       <td>2</td>
-			       <td>Joueur 2</td>
-			       <td>610</td>
-			   </tr>		   
+			       <td id='j2'></td>
+			       <td id='s2'></td>
+			   </tr>
 
 			   <tr>
 			       <td>3</td>
-			       <td>Joueur 3</td>
-			       <td>600</td>
+			       <td id='j3'></td>
+			       <td id='s3'></td>
 			   </tr>
 
 			   <tr>
 			       <td>4</td>
-			       <td>Joueur 4</td>
-			       <td>590</td>
-			   </tr>		   
+			       <td id='j4'></td>
+			       <td id='s4'></td>
+			   </tr>
 
 			   <tr>
 			       <td>5</td>
-			       <td>Joueur 5</td>
-			       <td>580</td>
+			       <td id='j5'></td>
+			       <td id='s5'></td>
 			   </tr>
 
 			   <tr>
 			       <td>6</td>
-			       <td>Joueur 6</td>
-			       <td>570</td>
-			   </tr>		   
+			       <td id='j6'></td>
+			       <td id='s6'></td>
+			   </tr>
 
 			   <tr>
 			       <td>7</td>
-			       <td>Joueur 7</td>
-			       <td>560</td>
+			       <td id='j7'></td>
+			       <td id='s7'></td>
 			   </tr>
 
 			   <tr>
 			       <td>8</td>
-			       <td>Joueur 8</td>
-			       <td>550</td>
-			   </tr>		   
+			       <td id='j8'></td>
+			       <td id='s8'></td>
+			   </tr>
 
 			   <tr>
 			       <td>9</td>
-			       <td>Joueur 9</td>
-			       <td>540</td>
+			       <td id='j9'></td>
+			       <td id='s9'></td>
 			   </tr>
 
 			   <tr>
 			       <td>10</td>
-			       <td>Joueur 10</td>
-			       <td>530</td>
+			       <td id='j10'></td>
+			       <td id='s10'></td>
 			   </tr>
 
 			</table>
@@ -90,13 +90,73 @@
           type: 'post',
           success: function(output) {
 			  			var jsonvalue = $.parseJSON('[' + output + ']');
-						setTop(jsonvalue);
+							setTop(jsonvalue[0]);
                     }
   		});
 
 		function setTop(classement){
-			console.log(classement);
-		}  
+
+			var nomdugars = document.getElementById('j1');
+			nomdugars.innerHTML = classement[0]["pseudo"];
+
+			var scoredugars = document.getElementById('s1');
+			scoredugars.innerHTML = classement[0]["score"];
+
+			var nomdugars1 = document.getElementById('j2');
+			nomdugars1.innerHTML = classement[1]["pseudo"];
+
+			var scoredugars1 = document.getElementById('s2');
+			scoredugars1.innerHTML = classement[1]["score"];
+
+			var nomdugars2 = document.getElementById('j3');
+			nomdugars2.innerHTML = classement[2]["pseudo"];
+
+			var scoredugars2 = document.getElementById('s3');
+			scoredugars2.innerHTML = classement[2]["score"];
+
+			var nomdugars3 = document.getElementById('j4');
+			nomdugars3.innerHTML = classement[3]["pseudo"];
+
+			var scoredugars3 = document.getElementById('s4');
+			scoredugars3.innerHTML = classement[3]["score"];
+
+			var nomdugars4 = document.getElementById('j5');
+			nomdugars4.innerHTML = classement[4]["pseudo"];
+
+			var scoredugars4 = document.getElementById('s5');
+			scoredugars4.innerHTML = classement[4]["score"];
+
+			var nomdugars5 = document.getElementById('j6');
+			nomdugars5.innerHTML = classement[5]["pseudo"];
+
+			var scoredugars5 = document.getElementById('s6');
+			scoredugars5.innerHTML = classement[5]["score"];
+
+			var nomdugars6 = document.getElementById('j7');
+			nomdugars6.innerHTML = classement[6]["pseudo"];
+
+			var scoredugars6 = document.getElementById('s7');
+			scoredugars6.innerHTML = classement[6]["score"];
+
+			var nomdugars7 = document.getElementById('j8');
+			nomdugars7.innerHTML = classement[7]["pseudo"];
+
+			var scoredugars7 = document.getElementById('s8');
+			scoredugars7.innerHTML = classement[7]["score"];
+
+			var nomdugars8 = document.getElementById('j9');
+			nomdugars8.innerHTML = classement[8]["pseudo"];
+
+			var scoredugars8 = document.getElementById('s9');
+			scoredugars8.innerHTML = classement[8]["score"];
+
+			var nomdugars9 = document.getElementById('j10');
+			nomdugars9.innerHTML = classement[9]["pseudo"];
+
+			var scoredugars9 = document.getElementById('s10');
+			scoredugars9.innerHTML = classement[9]["score"];
+
+		}
 	</script>
 </body>
 
