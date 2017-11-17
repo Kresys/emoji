@@ -1,0 +1,54 @@
+body {
+	background-image: url("../assets/images/FondTop10.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	text-transform: uppercase;
+	background-color: black;
+}
+
+.divbouton{            
+  text-align: center;
+  margin-top: 55px;
+}
+
+.btn {
+  background-image: -webkit-linear-gradient(top, #FFFFFF, #FFFFFF);
+  background-image: -moz-linear-gradient(top, #FFFFFF, #FFFFFF);
+  background-image: -ms-linear-gradient(top, #FFFFFF, #FFFFFF);
+  background-image: -o-linear-gradient(top, #FFFFFF, #FFFFFF);
+  background-image: linear-gradient(to bottom, #FFFFFF, #FFFFFF);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 10px;
+  font-family: 'helvetica';
+  color: #000000;
+  font-size: 25px;
+  padding: 22px 22px 22px 22px;
+  text-decoration: none;
+}
+
+.text{							/* LES MEILLEURS JOUEURS */
+	text-align: center;
+	font-size: 40px;
+	margin: 0;
+	font-family: 'Baloo Bhai';
+	margin-top: 30px;
+}
+
+table{
+	text-align: center;
+	margin: auto;
+	margin-top: 25px;
+	font-size: 31px;
+	font-family: 'Baloo Bhai';
+	background-color: rgba(250, 250, 250, 0.5);
+	border-radius: 15px;
+	padding: 10px;
+}
+
+td{
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+}

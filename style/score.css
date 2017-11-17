@@ -1,5 +1,5 @@
 body {
-	background-image: url("../assets/images/export-back.png");
+	background-color: black;
 	background-size: cover;
 	color: white;
 }
@@ -10,18 +10,39 @@ p {
 
 .bravo{							/* nom du joueur */
 	text-align: center;
-	font-size: 50px;
+	font-size: 40px;
 	margin: 0;
 	font-family: 'Baloo Bhai';
-	margin-top: 100px;
+	margin-top: 15px;
 }
 
-.divbouton{						
+.divbouton{            
+  text-align: center;
+  margin-top: 200px;
+}
+
+.divbouton2{						
 	text-align: center;
-	margin-top: 100px;
+	margin-top: 25px;
 }
 
 .btn {
+  background-image: -webkit-linear-gradient(top, #FFFFFF, #FFFFFF);
+  background-image: -moz-linear-gradient(top, #FFFFFF, #FFFFFF);
+  background-image: -ms-linear-gradient(top, #FFFFFF, #FFFFFF);
+  background-image: -o-linear-gradient(top, #FFFFFF, #FFFFFF);
+  background-image: linear-gradient(to bottom, #FFFFFF, #FFFFFF);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 10px;
+  font-family: 'helvetica';
+  color: #000000;
+  font-size: 25px;
+  padding: 22px 42px 22px 42px;
+  text-decoration: none;
+}
+
+.btn2 {
   background-image: -webkit-linear-gradient(top, #FFFFFF, #FFFFFF);
   background-image: -moz-linear-gradient(top, #FFFFFF, #FFFFFF);
   background-image: -ms-linear-gradient(top, #FFFFFF, #FFFFFF);
@@ -44,5 +65,16 @@ p {
 
 .logo{
 	text-align: center;
-	margin-top: 70px;
+	margin-top: 22px;
+}
+
+#mavideo {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -100;
 }
