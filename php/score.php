@@ -68,6 +68,9 @@
         case 'getScore':
             echo json_encode(getClassement($_POST['id']));
             break;
+        case 'getTop10':
+            echo json_encode(getTop10());
+            break;
     }
 }
 

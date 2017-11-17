@@ -9,7 +9,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../style/classement.css">
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 
@@ -84,6 +84,20 @@
 	<div class="divbouton"><a href="../templates/home.html"> <input class="btn" type="button" value="RETOUR A L'ACCUEIL"/></a></div> <!-- Mettre le lien de la page d'accueil -->
 	<div class="divbouton"><a href="../templates/score.html"> <input class="btn" type="button" value="RETOUR AU SCORE"/></a></div> <!-- Mettre le lien de la page d'accueil -->
 
+	<script>
+		$.ajax({ url: '../php/score.php',
+          data: {action: 'getTop10'},
+          type: 'post',
+          success: function(output) {
+			  			var jsonvalue = $.parseJSON('[' + output + ']');
+						setTop(jsonvalue);
+                    }
+  		});
+
+		function setTop(classement){
+			console.log(classement);
+		}  
+	</script>
 </body>
 
 </html>
