@@ -7,25 +7,50 @@ body {
 display: inline-block;
 width: 100%;
 text-align: center;
+padding-top: 40px;
+margin-bottom: 50px;
 }
 
-.logo {
-float: left;
-padding: 10px;
-}
 
 .score {
-text-align: center;
 padding: 10px;
 font-size: 40px;
 color: white;
+display: flex;
+justify-content: center;
+}
+
+#scorejs{
+  font-size: 60px;
+}
+
+#timer{
+  width: 80px;
+  background-color: white;
+  text-align: center;
+  border-radius: 50%;
+  height: 80px; /* hauteur du parent */
+  line-height: 80px; /* hauteur de ligne (identique) */
+  white-space: nowrap; /* interdiction de passer à la ligne */
+  font-size: 20px;
+  margin-left: 50px;
+  float: left;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
 
 }
 
 .btn-quitter {
   float: right;
-
+  margin-right: 50px;
+  width: 80px;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  border-radius: 50%;
+  height: 80px; /* hauteur du parent */
+  line-height: 75px; /* hauteur de ligne (identique) */
+  white-space: nowrap; /* interdiction de passer à la ligne */
+  font-size: 40px;
 }
 
 .phrase{
@@ -38,7 +63,6 @@ color: white;
 .champsemoji{
   padding: 50px;
   text-align: center;
-
 }
 
 .saisie{
@@ -63,7 +87,6 @@ color: white;
 }
 
 .backemoji{
-
 background-color: rgba(255, 255, 255, 0.5);
 width: 100%;
 border-radius: 10px;
