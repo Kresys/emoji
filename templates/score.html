@@ -15,7 +15,7 @@
 
 <body>
 	<div class="logo"><img src="../assets/images/LogoSmall.png"></div>
-	<p class="bravo">BRAVO $PSEUDO<br>TU AS OBTENU<br>600 points <br> <FONT size="6px">TU ES 13ème</p>
+	<p class="bravo" id="bravo"></p>
 	<div class="divbouton"><a href="../templates/classement.html"> <input class="btn" type="button" value="VOIR LE CLASSEMENT"/></a></div>
 	<div class="divbouton2"><a href="../templates/home.html"> <input class="btn2" type="button" value="RECOMMENCER A JOUER"/></a></div>	<!-- Mettre le lien de la page 2 -->
 
@@ -33,7 +33,13 @@
   		});
 
 		function setDatas(rank, score, pseudo){
-
+			var points = document.getElementById('bravo');
+			if ( rank ==1 ) {
+				points.innerHTML = 'BRAVO '+pseudo+'<br>TU AS OBTENU<br>'+score+'points <br> <FONT size="6px">TU ES'+rank+'er';
+			}
+			else {
+				points.innerHTML = 'BRAVO '+pseudo+'<br>TU AS OBTENU<br>'+score+'points <br> <FONT size="6px">TU ES'+rank+'ème';
+			}
 		}  
 	</script>
 </body>
