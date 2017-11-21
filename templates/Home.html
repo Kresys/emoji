@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Emojis Projet</title>
+
     <meta charset="utf-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
     <link rel="stylesheet" href="../style/home.css">
@@ -18,8 +19,10 @@
 
     <form action="../php/insertPseudo.php" method="post" class="hola">
       <div class="name"><input class="input_nom" type="text" name="pseudo" placeholder="VOTRE NOM" required/></div>
-      <div class="bouton"><a id="tuto" onclick="playvideo()" href="#">VOIR LE TUTO</a></div>
       <div class="bouton"><input class="submit" type="submit" value="COMMENCER A JOUER"></input></div>
+      <br><br><br><br><br><br><br><br><br><br><br>
+      <div class="bouton"><a id="tuto"  href="#">VOIR LE TUTO</a></div>
+      <div class="bouton"><a id="tuto" href="classement.html">CLASSEMENT</a></div>
     </form>
 
     <script>
@@ -27,6 +30,7 @@
       document.getElementById('video').onclick = function (){
           document.getElementById('video').play();
       };
+
       function playvideo() {
         document.getElementById('video').style.visibility = 'visible';
         document.getElementById('video').play();

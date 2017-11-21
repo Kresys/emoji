@@ -28,17 +28,28 @@
           type: 'post',
           success: function(output) {
 			  			var jsonvalue = $.parseJSON('[' + output + ']');
-						setDatas(jsonvalue[0],jsonvalue[1],jsonvalue[2]);
+						console.log(jsonvalue[0]);
+						setDatas(jsonvalue[0][0],jsonvalue[0][1],jsonvalue[0][2]);
+                    }
+  		});
+
+		  $.ajax({ url: '../php/score.php',
+          data: {action: 'total'},
+          type: 'post',
+          success: function(output) {
+			  			var jsonvalue = $.parseJSON('[' + output + ']');
+						console.log(jsonvalue[0]);
+						document.getElementById('bravo').innerHTML += '<FONT size="6px"> sur '+jsonvalue[0]["num"];
                     }
   		});
 
 		function setDatas(rank, score, pseudo){
 			var points = document.getElementById('bravo');
 			if ( rank ==1 ) {
-				points.innerHTML = 'BRAVO '+pseudo+'<br>TU AS OBTENU<br>'+score+'points <br> <FONT size="6px">TU ES'+rank+'er';
+				points.innerHTML = 'BRAVO '+pseudo+'<br>TU AS OBTENU<br>'+score+' points <br> <FONT size="6px">TU ES '+rank+'er';
 			}
 			else {
-				points.innerHTML = 'BRAVO '+pseudo+'<br>TU AS OBTENU<br>'+score+'points <br> <FONT size="6px">TU ES'+rank+'ème';
+				points.innerHTML = 'BRAVO '+pseudo+'<br>TU AS OBTENU<br>'+score+' points <br> <FONT size="6px">TU ES '+rank+'ème';
 			}
 		}  
 	</script>

@@ -573,8 +573,8 @@ function clearSaisie(){
 
 // TIMER 
 
-var secondes = 10;
-var minutes = 0;
+var secondes = 01;
+var minutes = 2;
 document.getElementById('timer').innerHTML = minutes + ":" + secondes;
 startTimer();
 
@@ -623,6 +623,7 @@ function endGame(){
                         console.log(output);
                     }
   });
+  setTimeout(console.log("attente"), 800);
   document.location.href = "score.html?id="+this.playerId;
 }
 

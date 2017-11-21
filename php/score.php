@@ -60,6 +60,27 @@
         return $top10;
     }
 
+    // TOTAL JOUEUR
+
+    function getTotal(){
+        global $conn;
+
+        $total = array();
+        $select = "SELECT count(*) as num FROM utilisateur";
+        $result = mysqli_query($conn, $select);
+        if (mysqli_num_rows($result) > 0) {
+            // output data of each row
+            while($row = mysqli_fetch_assoc($result)) {
+                    array_push($total, $row);
+                }
+        }
+        else {
+            echo "Impossible de charger votre classement";
+        }
+        return $total[0];
+
+    }
+
     if(isset($_POST['action']) && !empty($_POST['action'])) {
     switch ($_POST['action']){
         case 'setScore':
@@ -71,6 +92,8 @@
         case 'getTop10':
             echo json_encode(getTop10());
             break;
+        case 'total':
+            echo json_encode(getTotal());
     }
 }
 
